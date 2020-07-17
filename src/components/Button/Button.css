@@ -5,7 +5,7 @@
   --red-light: #ffb3b9;
   --blue: #33a0ff;
   --blue-hover: #2e90e5;
-  --blue-light: #8ac8ff;
+  --blue-light: #ebf6ff;
   --green: #0ad00a;
   --green-hover: #07c107;
   --green-light: #99fa99;
@@ -41,6 +41,7 @@ button {
 .button-light-primary {
   background-color: var(--blue-light);
   border: var(--blue-light) solid 2px;
+  color: var(--blue);
 }
 
 .button-danger {
@@ -63,6 +64,7 @@ button {
 .button-light-danger {
   background-color: var(--red-light);
   border: var(--red-light) 2px solid;
+  color: var(--red);
 }
 
 .button-success {
@@ -84,6 +86,7 @@ button {
 .button-light-success {
   background-color: var(--green-light);
   border: var(--green-light) 2px solid;
+  color: var(--green);
 }
 
 .button-warning {
@@ -105,10 +108,11 @@ button {
 .button-light-warning {
   background-color: var(--orange-light);
   border: var(--orange-light) 2px solid;
+  color: var(--orange);
 }
 
 .button-large {
-  padding: 15px 20px;
+  padding: 15px 25px;
 }
 
 .button-default {
@@ -125,4 +129,5 @@ button {
 .button-light-default {
   background-color: var(--navy-light);
   border: var(--navy-light) 2px solid;
+  color: var(--navy);
 }
