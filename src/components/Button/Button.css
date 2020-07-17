@@ -2,7 +2,7 @@
   --white: #ffffff;
   --red: #ff4858;
   --red-hover: #f53848;
-  --red-light: #ffb3b9;
+  --red-light: #ffebed;
   --blue: #33a0ff;
   --blue-hover: #2e90e5;
   --blue-light: #ebf6ff;
@@ -30,6 +30,7 @@ button {
 
 .button-primary:hover {
   background-color: var(--navy);
+  border: var(--navy) 2px solid;
 }
 
 .button-outline-primary {
@@ -75,6 +76,7 @@ button {
 
 .button-success:hover {
   background-color: var(--green-hover);
+  border: var(--green-hover) 2px solid;
 }
 
 .button-outline-success {
@@ -97,6 +99,7 @@ button {
 
 .button-warning:hover {
   background-color: var(--orange-hover);
+  border: var(--orange-hover) solid 2px;
 }
 
 .button-outline-warning {
@@ -118,12 +121,18 @@ button {
 .button-default {
   background-color: var(--navy);
   color: var(--white);
+  border: var(--navy) 2px solid;
 }
 
 .button-outline-default {
   background-color: var(--white);
   border: var(--navy) 2px solid;
   color: var(--navy);
+}
+
+.button-default:hover {
+  background-color: var(--navy-hover);
+  border: var(--navy-hover) 2px solid;
 }
 
 .button-light-default {
