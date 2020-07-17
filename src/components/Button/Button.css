@@ -1,6 +1,9 @@
 :root {
+  --white: #ffffff;
   --red: #ff4858;
   --red-hover: #f53848;
+  --blue: #33a0ff;
+  --blue-hover: #2e90e5;
   --green: #0ad00a;
   --green-hover: #07c107;
   --orange: #ffc600;
@@ -10,19 +13,14 @@
 }
 
 button {
-  border-radius: 2px;
-  padding: 5px 25px;
+  border-radius: 3px;
+  padding: 5px 30px;
 }
 
 .button-primary {
   background-color: var(--blue);
   color: var(--white);
-  border: var(--green) 2px dashed;
-}
-
-.button-primary-outline {
-  background-color: var(--white);
-  border: var(--yellow) 2px solid;
+  border: var(--blue) solid 2px;
 }
 
 .button-primary:hover {
@@ -36,7 +34,12 @@ button {
 }
 
 .button-danger:hover {
-  background-color: var(--navy);
+  background-color: var(--red-hover);
+}
+
+.button-outline-danger {
+  background-color: var(--white);
+  border: var(--red) 2px solid;
 }
 
 .button-success {
@@ -46,28 +49,43 @@ button {
 }
 
 .button-success:hover {
-  background-color: var(--navy-hover);
+  background-color: var(--green-hover);
+}
+
+.button-outline-success {
+  background-color: var(--white);
+  border: var(--green) 2px solid;
 }
 
 .button-warning {
   background-color: var(--orange);
   color: var(--white);
-  border: var(--blue);
+  border: var(--orange) 2px solid;
 }
 
 .button-warning:hover {
-  background-color: var(--red-hover);
+  background-color: var(--orange-hover);
 }
 
-.button-outline {
-  outline: 1px solid var(--red);
+.button-outline-warning {
+  background-color: var(--white);
+  border: var(--orange) 2px solid;
 }
 
 .button-large {
-  padding: 10px 60px;
+  padding: 10px 20px;
 }
 
 .button-default {
   background-color: var(--navy);
   color: var(--white);
+}
+
+.button-outline-default {
+  background-color: var(--white);
+  border: var(--navy) 2px solid;
+}
+.button-outline-primary {
+  background-color: var(--white);
+  border: var(--blue) 2px solid;
 }

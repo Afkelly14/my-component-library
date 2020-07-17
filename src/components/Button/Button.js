@@ -12,11 +12,15 @@ const Button = (props) => {
   }
 
   if (props.large) {
-    classList.push("button-large");
+    classList.push(`button-large`);
   }
 
   if (props.outline) {
-    classList.push("button-outline");
+    classList.push(`button-outline-${props.type}`);
+  }
+
+  if (props.light) {
+    classList.push(`button-light-${props.type}`);
   }
 
   return (
