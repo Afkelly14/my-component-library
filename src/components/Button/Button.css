@@ -2,14 +2,19 @@
   --white: #ffffff;
   --red: #ff4858;
   --red-hover: #f53848;
+  --red-light: #ffb3b9;
   --blue: #33a0ff;
   --blue-hover: #2e90e5;
+  --blue-light: #8ac8ff;
   --green: #0ad00a;
   --green-hover: #07c107;
+  --green-light: #99fa99;
   --orange: #ffc600;
   --orange-hover: #ebb600;
+  --orange-light: #ffeba3;
   --navy: #22262a;
   --navy-hover: #13161a;
+  --navy-light: #9ca6b0;
 }
 
 button {
@@ -27,25 +32,43 @@ button {
   background-color: var(--navy);
 }
 
+.button-outline-primary {
+  background-color: var(--white);
+  border: var(--blue) 2px solid;
+  color: var(--blue);
+}
+
+.button-light-primary {
+  background-color: var(--blue-light);
+  border: var(--blue-light) solid 2px;
+}
+
 .button-danger {
   background-color: var(--red);
   color: var(--white);
-  border: var(--blue);
+  border: var(--red) 2px solid;
 }
 
 .button-danger:hover {
   background-color: var(--red-hover);
+  border: var(--red-hover) 2px solid;
 }
 
 .button-outline-danger {
   background-color: var(--white);
   border: var(--red) 2px solid;
+  color: var(--red);
+}
+
+.button-light-danger {
+  background-color: var(--red-light);
+  border: var(--red-light) 2px solid;
 }
 
 .button-success {
   background-color: var(--green);
   color: var(--white);
-  border: var(--blue);
+  border: var(--green) 2px solid;
 }
 
 .button-success:hover {
@@ -55,6 +78,12 @@ button {
 .button-outline-success {
   background-color: var(--white);
   border: var(--green) 2px solid;
+  color: var(--green);
+}
+
+.button-light-success {
+  background-color: var(--green-light);
+  border: var(--green-light) 2px solid;
 }
 
 .button-warning {
@@ -70,10 +99,16 @@ button {
 .button-outline-warning {
   background-color: var(--white);
   border: var(--orange) 2px solid;
+  color: var(--orange);
+}
+
+.button-light-warning {
+  background-color: var(--orange-light);
+  border: var(--orange-light) 2px solid;
 }
 
 .button-large {
-  padding: 10px 20px;
+  padding: 15px 20px;
 }
 
 .button-default {
@@ -84,8 +119,10 @@ button {
 .button-outline-default {
   background-color: var(--white);
   border: var(--navy) 2px solid;
+  color: var(--navy);
 }
-.button-outline-primary {
-  background-color: var(--white);
-  border: var(--blue) 2px solid;
+
+.button-light-default {
+  background-color: var(--navy-light);
+  border: var(--navy-light) 2px solid;
 }
