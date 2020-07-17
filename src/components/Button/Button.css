@@ -1,0 +1,73 @@
+:root {
+  --red: #ff4858;
+  --red-hover: #f53848;
+  --green: #0ad00a;
+  --green-hover: #07c107;
+  --orange: #ffc600;
+  --orange-hover: #ebb600;
+  --navy: #22262a;
+  --navy-hover: #13161a;
+}
+
+button {
+  border-radius: 2px;
+  padding: 5px 25px;
+}
+
+.button-primary {
+  background-color: var(--blue);
+  color: var(--white);
+  border: var(--green) 2px dashed;
+}
+
+.button-primary-outline {
+  background-color: var(--white);
+  border: var(--yellow) 2px solid;
+}
+
+.button-primary:hover {
+  background-color: var(--navy);
+}
+
+.button-danger {
+  background-color: var(--red);
+  color: var(--white);
+  border: var(--blue);
+}
+
+.button-danger:hover {
+  background-color: var(--navy);
+}
+
+.button-success {
+  background-color: var(--green);
+  color: var(--white);
+  border: var(--blue);
+}
+
+.button-success:hover {
+  background-color: var(--navy-hover);
+}
+
+.button-warning {
+  background-color: var(--orange);
+  color: var(--white);
+  border: var(--blue);
+}
+
+.button-warning:hover {
+  background-color: var(--red-hover);
+}
+
+.button-outline {
+  outline: 1px solid var(--red);
+}
+
+.button-large {
+  padding: 10px 60px;
+}
+
+.button-default {
+  background-color: var(--navy);
+  color: var(--white);
+}

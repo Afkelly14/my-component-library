@@ -1,10 +1,29 @@
-import React from 'react';
+import React from "react";
+import "./Button.css";
 
 // This is a functional component - just sent up a little differently as an arrow function!
-const Button = (props) => (
-    <button>
-        {props.label}
-    </button>
-)
+const Button = (props) => {
+  let classList = [];
 
-export default Button; 
+  let types = ["primary", "danger", "warning", "success", "default"];
+
+  if (types.includes(props.type)) {
+    classList.push(`button-${props.type}`);
+  }
+
+  if (props.large) {
+    classList.push("button-large");
+  }
+
+  if (props.outline) {
+    classList.push("button-outline");
+  }
+
+  return (
+    <button className={classList.join(" ")} onClick={props.onClick}>
+      {props.label}
+    </button>
+  );
+};
+
+export default Button;
