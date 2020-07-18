@@ -6,7 +6,8 @@ const Button = (props) => {
   let classList = [];
 
   let types = ["primary", "danger", "warning", "success", "default"];
-
+    //types[0] = props['primary'] 
+    //classlist.push('button-primary')
   if (types.includes(props.type)) {
     classList.push(`button-${props.type}`);
   }
@@ -24,6 +25,7 @@ const Button = (props) => {
   }
 
   return (
+    //className={'button-primary'}
     <button className={classList.join(" ")} onClick={props.onClick}>
       {props.label}
     </button>

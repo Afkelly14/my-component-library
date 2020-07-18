@@ -1,7 +1,6 @@
 import React from "react";
 import "./Icon.css";
-import cart from "./Cart.png";
-import favorites from "./Favorites.png";
+
 
 const Icon = (props) => {
   let classList = "";
@@ -13,7 +12,10 @@ const Icon = (props) => {
   }
 
   return (
-      <button className={classList}><img src={props.img}/>{props.label}</button>
+    <button className={classList}>
+      <img src={props.img} />
+      {props.label}
+    </button>
   );
 };
 
