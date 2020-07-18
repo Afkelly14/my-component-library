@@ -1,9 +1,20 @@
 import React from "react";
+import "./Icon.css";
+import cart from "./Cart.png";
+import favorites from "./Favorites.png";
 
-import "./icon.css";
+const Icon = (props) => {
+  let classList = "";
 
-icon = (props) => {
-  return <div></div>;
+  let types = ["icon"];
+
+  if (types.includes(props.type)) {
+    classList += `icon`;
+  }
+
+  return (
+      <button className={classList}><img src={props.img}/>{props.label}</button>
+  );
 };
 
-export default icon;
+export default Icon;
