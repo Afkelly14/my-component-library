@@ -11,10 +11,18 @@
 }
 
 .counter {
-
-
+  display: flex;
+  background-color: #efefef;
+  margin-right: 650px;
+  height: 35px;
 }
 
-.count {
-    
+.clicker {
+  padding: 5px 20px;
+  border: none;
+  color: var(--blue);
+}
+
+p {
+  margin-top: 8px;
 }
