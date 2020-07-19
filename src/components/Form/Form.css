@@ -26,3 +26,19 @@
 p {
   margin-top: 8px;
 }
+
+.dropdown {
+  padding: 5px 100px 5px 5px;
+}
+
+.dropdown-small {
+  padding: 5px 60px 5px 5px;
+}
+
+.dropdown-large {
+  padding: 10px 100px 10px 5px;
+}
+
+.dropdown-dark {
+  background-color: #efefef;
+}

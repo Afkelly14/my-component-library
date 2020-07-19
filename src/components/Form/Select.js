@@ -13,3 +13,6 @@ const Select = (props) => {
     </select>
   );
 };
+
+
+export default Select;
