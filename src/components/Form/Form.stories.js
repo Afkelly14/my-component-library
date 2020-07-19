@@ -10,9 +10,13 @@ storiesOf("Form", module)
   .add("Email", () => <Form email type="text" />)
   .add("Email-large", () => <Form email type="text" large />)
   .add("Dropdown-small", () => <Form dropdown type="dropdown" small />)
-  .add("Dropdown-small-dark", () => <Form dropdown type="dropdown" small dark />)
+  .add("Dropdown-small-dark", () => (
+    <Form dropdown type="dropdown" small dark />
+  ))
   .add("Dropdown", () => <Form dropdown type="dropdown" />)
   .add("Dropdown-dark", () => <Form dropdown type="dropdown" dark />)
   .add("Dropdown-large", () => <Form dropdown type="dropdown" large />)
-  .add("Dropdown-large-dark", () => <Form dropdown type="dropdown" large dark />)
-  .add("Counter", () => <Counter type="counter" />);
+  .add("Dropdown-large-dark", () => (
+    <Form dropdown type="dropdown" large dark />
+  ))
+  .add("Counter", () => <Counter min={0} max={10} step={1} value={0} />);
