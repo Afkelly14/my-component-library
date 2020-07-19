@@ -6,8 +6,8 @@ const Button = (props) => {
   let classList = [];
 
   let types = ["primary", "danger", "warning", "success", "default"];
-    //types[0] = props['primary'] 
-    //classlist.push('button-primary')
+  //types[0] = props['primary']
+  //classlist.push('button-primary')
   if (types.includes(props.type)) {
     classList.push(`button-${props.type}`);
   }

@@ -4,7 +4,7 @@ import "./Form.css";
 const Form = (props) => {
   let classList = [];
 
-  let types = ["Email", "Small"];
+  let types = ["email", "small", "regular"];
 
   if (types.includes(props.type)) {
     classList.push(`form`);
@@ -14,11 +14,19 @@ const Form = (props) => {
     classList.push(`email-${props.type}`);
   }
 
+  if (props.regular) {
+    classList.push(`email-${props.type}`);
+  }
+
+  if (props.large) {
+    classList.push(`email-${props.type}`);
+  }
+
   return (
     <form>
       <label>Email</label>
       <br />
-      <input label="text" placeholder="Email" />
+      <input label="text" className={classList.join(" ")} placeholder="Email" />
     </form>
   );
 };
