@@ -3,6 +3,7 @@ import "./Form.css";
 
 const Form = (props) => {
   let classList = [];
+  let largeClass = [];
 
   let types = ["email", "dropdown"];
 
@@ -26,22 +27,44 @@ const Form = (props) => {
     classList.push(`${props.type}-dark`);
   }
 
+  if (props.size) {
+    largeClass.push(`submit-${props.size}`);
+  }
+
   if (props.email) {
-  return (
-    <form>
-      <label>Email</label>
-      <br />
-      <input label="text" className={classList.join(" ")} placeholder="Email" />
-    </form>
-  );
-  }//end of if statement
+    return (
+      <form>
+        <label>Email</label>
+        <br />
+        <input
+          label="text"
+          className={classList.join(" ")}
+          placeholder="Email"
+        />
+      </form>
+    );
+  } //end of if statement
 
   if (props.dropdown) {
-      return (
+    return (
       <select className={classList.join(" ")}>
-      <option>Select</option>
-    </select>
-      )
+        <option>Select</option>
+      </select>
+    );
+  }
+
+  if (props.voucher) {
+    return (
+      <form>
+        <br />
+        <input
+          type={props.text}
+          className={classList.join(" ")}
+          value={props.value}
+        />
+        <input type="submit" className="Voucher" value={props.value} />
+      </form>
+    );
   }
 };
 

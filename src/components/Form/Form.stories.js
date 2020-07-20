@@ -19,4 +19,10 @@ storiesOf("Form", module)
   .add("Dropdown-large-dark", () => (
     <Form dropdown type="dropdown" large dark />
   ))
-  .add("Counter", () => <Counter min={0} max={10} step={1} value={0} />);
+  .add("Counter", () => <Counter min={0} max={10} step={1} value={0} />)
+  .add("Voucher", () => (
+    <Form voucher type="voucher" size="normal" value="Reedem" />
+  ))
+  .add("Voucher Large", () => (
+    <Form voucher type="voucher" size="Large" value="Reedem" large />
+  ));

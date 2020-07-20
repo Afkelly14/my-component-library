@@ -1,12 +1,12 @@
-.email-regular {
+.text-regular {
   padding: 5px;
 }
 
-.email-large {
-  padding: 10px;
+.text-large {
+  padding: 10px 100px 10px 5px;
 }
 
-.email-small {
+.text-small {
   font-size: 10px;
 }
 
@@ -29,6 +29,7 @@ p {
 
 .dropdown {
   padding: 5px 100px 5px 5px;
+  border-color: var(--grey);
 }
 
 .dropdown-small {
@@ -41,4 +42,27 @@ p {
 
 .dropdown-dark {
   background-color: #efefef;
+}
+
+.voucher-normal {
+  padding: 10px 20px 10px 10px;
+}
+
+.voucher-large {
+  padding: 10px 10px 10px 5px;
+  outline: #efefef;
+}
+
+.-Normal {
+  background-color: var(--blue);
+  padding: 5px 5px 5px 5px;
+  color: white;
+  border: var(--blue) solid 2px;
+}
+
+.-Large {
+  background-color: var(--blue);
+  color: white;
+  border: var(--blue) solid 2px;
+  padding: 10px 20px 10px 5px;
 }
