@@ -60,9 +60,10 @@ const Form = (props) => {
         <input
           type={props.text}
           className={classList.join(" ")}
-          value={props.value}
+          placeholder={props.placeholder}
         />
-        <input type="submit" className="Voucher" value={props.value} />
+        <input type="submit" className={largeClass} value={props.value} />
+      
       </form>
     );
   }

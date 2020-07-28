@@ -48,19 +48,20 @@ p {
   padding: 10px 20px 10px 10px;
 }
 
+.submit-normal {
+  background-color: var(--blue);
+  /* padding: 5px 5px 5px 5px; */
+  color: var(--white);
+  border: var(--blue) solid 2px;
+}
+
 .voucher-large {
   padding: 10px 10px 10px 5px;
   outline: #efefef;
 }
 
-.-Normal {
-  background-color: var(--blue);
-  padding: 5px 5px 5px 5px;
-  color: white;
-  border: var(--blue) solid 2px;
-}
 
-.-Large {
+.submit-Large {
   background-color: var(--blue);
   color: white;
   border: var(--blue) solid 2px;

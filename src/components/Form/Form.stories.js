@@ -21,8 +21,8 @@ storiesOf("Form", module)
   ))
   .add("Counter", () => <Counter min={0} max={10} step={1} value={0} />)
   .add("Voucher", () => (
-    <Form voucher type="voucher" size="normal" value="Reedem" />
+    <Form voucher type="voucher" size="normal" placeholder="Voucher Code" value="Redeem" />
   ))
   .add("Voucher Large", () => (
-    <Form voucher type="voucher" size="Large" value="Reedem" large />
+    <Form voucher type="voucher" size="Large" placeholder="Voucher Code" value="Redeem" large />
   ));
